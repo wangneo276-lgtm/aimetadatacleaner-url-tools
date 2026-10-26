@@ -9,3 +9,6 @@ dotnet/**/bin/
 dotnet/**/obj/
 *.gem
 *.nupkg
+java/target/
+.dart_tool/
+dart/.dart_tool/

@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.github.bbwdadfg</groupId>
+  <artifactId>aimetadatacleaner-url-tools</artifactId>
+  <version>0.1.0</version>
+  <packaging>jar</packaging>
+  <name>aimetadatacleaner-url-tools</name>
+  <description>Offline URL builder for AI Metadata Cleaner image, video, and PDF metadata pages. Not an official SDK.</description>
+  <url>https://aimetadatacleaner.pro/</url>
+  <licenses><license><name>MIT License</name><url>https://opensource.org/license/mit/</url><distribution>repo</distribution></license></licenses>
+  <developers><developer><id>bbwdadfg</id><name>bbwdadfg</name></developer></developers>
+  <scm>
+    <connection>scm:git:https://github.com/wangneo276-lgtm/aimetadatacleaner-url-tools.git</connection>
+    <url>https://github.com/wangneo276-lgtm/aimetadatacleaner-url-tools</url>
+    <tag>v0.1.1</tag>
+  </scm>
+  <properties>
+    <maven.compiler.release>17</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <build><plugins>
+    <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-source-plugin</artifactId><version>3.3.1</version><executions><execution><id>attach-sources</id><phase>package</phase><goals><goal>jar-no-fork</goal></goals></execution></executions></plugin>
+    <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-javadoc-plugin</artifactId><version>3.11.2</version><configuration><source>17</source></configuration><executions><execution><id>attach-javadocs</id><phase>package</phase><goals><goal>jar</goal></goals></execution></executions></plugin>
+    <plugin><groupId>org.codehaus.mojo</groupId><artifactId>exec-maven-plugin</artifactId><version>3.5.0</version><executions><execution><id>run-url-test</id><phase>test</phase><goals><goal>java</goal></goals><configuration><mainClass>pro.aimetadatacleaner.UrlsTest</mainClass><classpathScope>test</classpathScope></configuration></execution></executions></plugin>
+  </plugins></build>
+  <profiles><profile><id>central-release</id><build><plugins>
+    <plugin><groupId>org.sonatype.central</groupId><artifactId>central-publishing-maven-plugin</artifactId><version>0.9.0</version><extensions>true</extensions><configuration><publishingServerId>central</publishingServerId><autoPublish>false</autoPublish><waitUntil>VALIDATED</waitUntil></configuration></plugin>
+    <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-gpg-plugin</artifactId><version>3.2.7</version><configuration><keyname>AF10698CAC475560</keyname><passphraseEnvName>MAVEN_GPG_PASSPHRASE</passphraseEnvName></configuration><executions><execution><id>sign-artifacts</id><phase>verify</phase><goals><goal>sign</goal></goals></execution></executions></plugin>
+  </plugins></build></profile></profiles>
+</project>

@@ -1,0 +1,11 @@
+{
+  "name": "@wangneo276-lgtm/aimetadatacleaner-url-tools",
+  "version": "0.1.0",
+  "exports": "./mod.ts",
+  "license": "MIT",
+  "homepage": "https://aimetadatacleaner.pro/",
+  "repository": "https://github.com/wangneo276-lgtm/aimetadatacleaner-url-tools",
+  "publish": {
+    "include": ["jsr.json", "mod.ts", "README.md"]
+  }
+}

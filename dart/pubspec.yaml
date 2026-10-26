@@ -1,0 +1,7 @@
+name: aimetadatacleaner_url_tools
+description: Offline URL builder for AI Metadata Cleaner image, video, and PDF metadata pages. Not an official SDK.
+version: 0.1.0
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+homepage: https://aimetadatacleaner.pro/
+repository: https://github.com/wangneo276-lgtm/aimetadatacleaner-url-tools
