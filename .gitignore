@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+dist/
+target/
+*.egg-info/
+**/*.egg-info/
+.DS_Store
+dotnet/**/bin/
+dotnet/**/obj/
+*.gem
+*.nupkg

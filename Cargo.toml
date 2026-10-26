@@ -1,0 +1,15 @@
+[package]
+name = "aimetadatacleaner-url-tools"
+version = "0.1.0"
+edition = "2021"
+description = "Offline URL builder for AI Metadata Cleaner image, video, and PDF metadata pages. Not an official SDK."
+license = "MIT"
+homepage = "https://aimetadatacleaner.pro/"
+repository = "https://github.com/wangneo276-lgtm/aimetadatacleaner-url-tools"
+readme = "README.md"
+keywords = ["metadata", "exif", "url-builder"]
+include = ["src/**", "tests/**", "README.md", "LICENSE", "Cargo.toml"]
+
+[lib]
+name = "aimetadatacleaner_url_tools"
+path = "src/lib.rs"
